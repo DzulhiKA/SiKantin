@@ -4,13 +4,54 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+- ## Edit The pubspec.yml
+name: sikantin
+description: "Aplikasi SiKantin menggunakan Supabase, Hive, GetX."
+publish_to: 'none'
 
-A few resources to get you started if this is your first Flutter project:
+version: 1.0.0+1
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+environment:
+  sdk: ^3.6.1
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # STATE MANAGEMENT
+  get: ^4.6.6
+
+  # SUPABASE AUTH + DATABASE
+  supabase_flutter: ^2.3.4
+
+  # LOCAL STORAGE
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+
+  # FILE PATH & UTIL
+  path_provider: ^2.1.3
+
+  # SUPPORT LIBRARIES
+  uuid: ^4.2.1
+  dio: ^5.4.0
+
+  # ICON
+  cupertino_icons: ^1.0.8
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # Hive Code Generator
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.6
+
+
+flutter:
+  uses-material-design: true
+
+## RUN "flutter pub get"
